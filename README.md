@@ -1,7 +1,3 @@
-# CrystalEnv
-
-CrystalEnv is a Python environment for running crystal simulations. This repository provides a guide to set up and use CrystalEnv.
-
 ## Installation
 
 To use CrystalEnv, follow these steps:
