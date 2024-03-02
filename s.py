@@ -14,7 +14,7 @@ def generate_prompt_from_json(json_file):
                 answer_choices = '\n'.join([f"{choice['label']}. {choice['text']}" for choice in choices])
 
                 # Create the prompt string
-                prompt = f"*Question*\n{question_stem}\n\n*Answer Choice*\n{answer_choices}\n\nWYou're given several options to choose from, but only one is the correct answer. When you provide your response, format it as 'answerKey - '."
+                prompt = f"**Question:**\n{question_stem}\n\n**Options:**\n{answer_choices}\n\nPlease provide the correct option (either A, B, C, or D) for this question."
                 
                 yield (prompt, question_stem, answer_choices)
             

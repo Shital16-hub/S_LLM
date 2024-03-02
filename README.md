@@ -1,26 +1,51 @@
+# CrystalEnv
+
+CrystalEnv is a Python environment designed for working with Hugging Face's libraries for natural language processing tasks.
 
 ## Installation
 
-To use CrystalEnv, follow these steps:
+To set up CrystalEnv, follow these steps:
 
-1. **Create a Conda Environment**: Create a new Conda environment named `crystalenv` with Python 3.10 by running the following command:
-    ```bash
+1. Create a new Conda environment named `crystalenv` with Python 3.10:
+    ```
     conda create -n crystalenv python=3.10
     ```
 
-2. **Activate the Environment**: Activate the `crystalenv` environment:
-    ```bash
+2. Activate the newly created environment:
+    ```
     conda activate crystalenv
     ```
 
-3. **Install Dependencies**: Install the required dependencies listed in `requirements.txt` using pip:
-    ```bash
+3. Install the required Python packages listed in `requirements.txt`:
+    ```
     pip install -r requirements.txt
+    ```
+
+4. Update Hugging Face Hub CLI to the latest version:
+    ```
+    pip install -U "huggingface_hub[cli]"
     ```
 
 ## Usage
 
-Once you have set up the environment, you can run your crystal simulations using the provided Python script.
+After setting up the environment, you can use CrystalEnv for your natural language processing tasks. Here's how you can proceed:
 
-```bash
-python s.py
+1. Login to the Hugging Face Hub CLI:
+    ```
+    huggingface-cli login
+
+    ```
+Enter your Hugging Face Token
+
+2. Execute your Python script `s.py`:
+    ```
+    python s.py
+    ```
+
+## Contributing
+
+If you'd like to contribute to CrystalEnv, feel free to submit pull requests or open issues on our GitHub repository. We welcome contributions from the community!
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
